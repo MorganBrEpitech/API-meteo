@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>API Météo</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <section class="input-section">
+      <h1>API Météo</h1>
+      <p class="info-error"></p> <!-- Message d'erreur si ville inconnue-->
+      <div class="content">
+        <input type="text" spellcheck="false" placeholder="Entrez le nom d'une ville">
+        <p>ou</p>
+        <button>Météo de votre position</button>
+      </div>
+    </section>
+
+    <section class="weather-section">
+
+      <div class="location">
+        <span>_, _</span>
+        <div class="weather">_ _</div>
+      </div>
+
+      <div class="top-details">
+        <!-- Temperature-->
+        <div class="temperature">
+          <span class="numb">_</span>
+          <span class="deg"><sup>°C</sup></span>
+
+          <div class="info-supp">
+            <!-- Temp min-->
+            <div class="column min">
+              <div class="details">
+                <i class='fa fa-thermometer-0'></i>
+                <span>_</span>
+                <span class="deg">°</span>C min
+              </div>
+            </div>
+
+            <!-- Temp max-->
+            <div class="column max">
+              <div class="details">
+                <i class='fa fa-thermometer-full'></i>
+                <span>_</span>
+                <span class="deg">°</span>C max
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end .temperature-->
+
+        <!-- Temps-->
+        <div class="sky">
+          <img src="./style/icons/" alt="Icone Temps">
+        </div>
+      </div><!-- end .top-details-->
+
+      <div class="bottom-details">
+
+        <!-- Ressenti-->
+        <div class="column feels">
+          <p>Ressentie</p>
+          <span>_</span>
+        </div>
+
+        <!-- Humidité-->
+        <span class="vertical-line"></span>
+        <div class="column humidity">
+          <p>Humidité</p>
+          <span>_</span>
+        </div>
+        <span class="vertical-line"></span>
+
+        <!-- Wind-->
+        <div class="column wind">
+          <p>Vent</p>
+          <span>_</span>
+        </div>
+
+      </div><!-- end .bottom-details-->
+
+    </section><!-- end .weather-section-->
+
+  </div><!-- end .card-->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
